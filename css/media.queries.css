@@ -1,0 +1,196 @@
+
+@media(min-width: 460px){
+    .nightroom{
+        display: flex;
+    }
+}
+
+
+@media(min-width: 400px){
+    .header_left{
+        display: none;
+    }
+    
+    .header_right{
+        display: none;
+    }
+}
+
+
+@media(min-width: 576px){
+    .header_left{
+        display: none;
+    }
+    
+    .header_right{
+        display: none;
+    }
+
+}
+
+
+@media(min-width: 650px){
+    .reset{
+        display: flex;
+    }
+    .main_header_market{
+       display: flex;
+    }
+
+    .main_header_left{
+        margin-left: 8px;
+    }
+
+    .coin_menu_active{
+        margin-left: 7.5px;
+    }
+
+    .main_header_days_active{
+        margin-left: 7.5px;
+    }
+
+
+    .main_bitcoins{
+        display: grid !important;
+        grid-template-columns:auto auto !important;
+        grid-template-rows:auto auto auto !important ;
+        grid-template-areas:"bitcoin platform "  "bitcoin platform" "bitcoin  others" !important;
+      
+    }
+
+    .main_bitcoins_others_body{
+        flex-direction: row !important;
+        display: grid;
+        grid-template-columns:60% 20% 20% ;
+        grid-template-rows: 100%;
+    }
+
+    .main_bitcoins_others_second{
+        display: grid !important;
+        grid-template-columns:80% 20% !important;
+        grid-template-rows:60% 40% !important;
+        grid-template-areas:"doge doge" "shib pepe_floki "!important ;
+
+    }
+
+    .main_bitcoins_others_first_two_left{
+        display: grid;
+        grid-auto-columns:50% 50% ;
+        grid-template-rows:60% 40% ; 
+        grid-template-areas:"wbeth wbeth  " "xrm hbar "  ;
+    }
+
+    .main_bitcoins_others_third{
+        flex-direction: column;
+    }
+   
+}
+
+@media(max-width: 650px){
+
+    .main_header_market_active{
+        display: none;
+    }
+}    
+
+
+
+@media(max-width: 768px){
+
+    .USD_currency_boxs{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .USD_currency_box{
+        width: 100%;
+    }
+
+    .USD_currency_text{
+        position: fixed;
+        float: left;
+        margin-left:2.5rem ; 
+    }
+  
+}
+
+@media(min-width: 992px){
+ 
+}
+
+@media(min-width: 1025px){
+    .header_container{
+        height: 57px;
+    }
+    .header_left_mobile{
+        display: none;
+
+    }
+
+    .header_add_watchlist_active{
+        display: none;
+    }
+
+    .header_left{
+        display: block;
+    }
+    
+    .header_right_mobile{
+        display: none;
+    }
+
+    .search_active{
+        display: none;
+    }
+
+    .header_right{
+        display: block;
+    }
+
+
+    .coin_menu{
+        display: none;
+    }
+
+    .coin_menu_active{
+        display: none;
+    }
+
+    .main_header_days_active{
+        margin-top: 8px;
+        margin-left:165px; 
+    }
+
+    .main_header_market_active{
+        margin-top: 8px;
+        margin-left:156.5px; 
+
+    }
+
+    .coin_desktop{
+      display: flex;
+    }
+    
+    .share_map{
+        display: flex;
+    }
+
+    .main_bitcoins_slidebar{
+        display: grid;
+        flex-direction: row;
+        grid-template-columns:75% 25%;
+        grid-template-rows: 100%;
+        background-color: #1d1f1e;
+        overflow-x: hidden;
+    }
+
+    .slidebar{
+        display:flex;
+    }
+}
+
+
+@media(min-width: 1200px){
+
+}

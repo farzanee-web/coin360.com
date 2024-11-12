@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toggle Window</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .window {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+            /* Hidden by default */
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="button" onclick="toggleWindow()">Toggle Window</button>
+    </div>
+
+    <div class="window" id="myWindow">
+        <span class="close-button" onclick="closeWindow()">&times;</span>
+        <h2>This is the window content</h2>
+        <p>This is some sample text inside the window.</p>
+    </div>
+
+    <script>
+        function toggleWindow() {
+            var window = document.getElementById("myWindow");
+            if (window.style.display === "none") {
+                window.style.display = "block";
+            } else {
+                window.style.display = "none";
+            }
+        }
+
+        function closeWindow() {
+            var window = document.getElementById("myWindow");
+            window.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
